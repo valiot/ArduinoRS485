@@ -178,4 +178,9 @@ void RS485Class::setPins(int txPin, int dePin, int rePin)
   _rePin = rePin;
 }
 
+void RS485Class::setSerial(HardwareSerial* hwSerial)
+{
+  _serial = hwSerial;
+}
+
 RS485Class RS485(SERIAL_PORT_HARDWARE, RS485_DEFAULT_TX_PIN, RS485_DEFAULT_DE_PIN, RS485_DEFAULT_RE_PIN);

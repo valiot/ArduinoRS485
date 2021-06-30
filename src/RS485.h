@@ -66,6 +66,7 @@ class RS485Class : public Stream {
     void sendBreakMicroseconds(unsigned int duration);
 
     void setPins(int txPin, int dePin, int rePin);
+    void setSerial(HardwareSerial* hwSerial);
 
   private:
     HardwareSerial* _serial;
